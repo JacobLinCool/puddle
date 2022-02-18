@@ -8,5 +8,5 @@ export default defineConfig((options) => ({
     clean: true,
     splitting: false,
     minify: !options.watch,
-    dts: !options.watch,
+    dts: options.watch ? false : { resolve: true },
 }));
