@@ -1,8 +1,9 @@
 {
     "name": "@jacoblincool/puddle",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Pooling? Maybe.",
     "main": "lib/index.js",
+    "module": "lib/index.mjs",
     "scripts": {
         "test": "jest --coverage",
         "prepare": "npm run build && npm run docs",
