@@ -83,6 +83,7 @@ export class Pool extends EventEmitter {
                         if (this.resolves.length > 0) this.resolves.shift()?.(true);
                         this.emit("task-finish", i, result);
                     } catch (err) {
+                        if (this.resolves.length > 0) this.resolves.shift()?.(true);
                         this.emit("task-error", i, err);
                     }
                 })(),
